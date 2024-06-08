@@ -1,6 +1,13 @@
 package com.example.semana07.entity;
 
-public class Libro {
+import java.io.Serializable;
+
+//Serializable:  es cuando un objeto ejm: "Libro", si tu quieres enviar de un lugar
+//a otro se va a serializar, quiere decir que se va a convertir un medio fisico ".xml, .xlsx, .json"
+// este archivo se dirige al destino es desearilable, quiere decir convertir un
+// archivo fisico a objeto.
+
+public class Libro implements Serializable {
 
     private int idLibro;
     private String titulo;
